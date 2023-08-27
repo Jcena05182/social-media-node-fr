@@ -7,7 +7,7 @@ import NewPost from '../../components/NewPost/NewPost';
 
 const fetchCommentsForPost = async (postId, token) => {
   try {
-    const response = await fetch(`http://localhost:5000/api/posts/${postId}/comments`, {
+    const response = await fetch(`https://social-media-webapp-back.azurewebsites.net/api/posts/${postId}/comments`, {
       headers: {
         "x-auth-token": token,
       }
@@ -34,7 +34,7 @@ const refreshPosts = async (setPosts, setComments, navigate) => {
   }
 
   try {
-    const response = await fetch("http://localhost:5000/api/posts", {
+    const response = await fetch("https://social-media-webapp-back.azurewebsites.net/api/posts", {
       headers: {
         "x-auth-token": token,
       }

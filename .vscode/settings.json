@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/dd1a5a68-25ae-4b58-a565-5146deeda444/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/social-media-webapp-front",
+    "appService.deploySubpath": "."
+}

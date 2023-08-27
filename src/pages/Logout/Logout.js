@@ -5,7 +5,7 @@ function Logout() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/auth/logout")
+    fetch("https://social-media-webapp-back.azurewebsites.net/api/auth/logout")
       .then(response => {
         if (response.ok) {
           localStorage.removeItem('authToken');

@@ -11,7 +11,7 @@ function Register() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     
-    const response = await fetch("http://localhost:5000/api/auth/register", {
+    const response = await fetch("https://social-media-webapp-back.azurewebsites.net/api/auth/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -20,7 +20,7 @@ function Register() {
     });
     
     if (response.ok) {
-      const data = await response.json();
+      // const data = await response.json();
       // Handle registration success, e.g., redirecting to login page or showing a success message.
     } else {
       // Handle errors

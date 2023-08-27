@@ -23,7 +23,7 @@ function Post({ post, comments }) {
     if (newComment.trim()) {
       try {
         const response = await axios.post(
-          `http://localhost:5000/api/posts/${post._id}`,
+          `https://social-media-webapp-back.azurewebsites.net/api/posts/${post._id}`,
           { text: newComment },
           {
             headers: {
@@ -53,7 +53,7 @@ function Post({ post, comments }) {
         </div>
       </header>
       <div className="post-content">
-        {post.image && <img src={`http://localhost:5000/${post.image}`} alt="Post Media" />}
+        {post.image && <img src={`https://social-media-webapp-back.azurewebsites.net/${post.image}`} alt="Post Media" />}
         <div className="post-icons">
           <div className="left-icons">
             <i className="far fa-heart"></i>

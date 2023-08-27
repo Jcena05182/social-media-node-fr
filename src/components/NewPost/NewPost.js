@@ -5,7 +5,7 @@ function NewPost(props) {
   const [postText, setPostText] = useState('');
   const [postImage, setPostImage] = useState(null);
   
-  const backendURL = "http://localhost:5000"
+  const backendURL = "https://social-media-webapp-back.azurewebsites.net"
 
   const handlePostSubmit = async () => {
     // First, upload the image to get a local file path or URL
